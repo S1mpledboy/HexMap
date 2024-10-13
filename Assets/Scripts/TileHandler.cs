@@ -28,12 +28,7 @@ public class TileHandler :MonoBehaviour
         ClearTiles();
         sprite.color = basicColor;
     }
-    //private void OnMouseDown()
-    //{
-    //    Vector2 clickPosition = new Vector2(transform.position.x, transform.position.y);
-    //    ClearTiles();
-    //    SelectNearHex(clickPosition);
-    //}
+
 
     void ClearTiles()
     {
