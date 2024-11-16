@@ -1,7 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class TileHandler :MonoBehaviour
 {
@@ -41,6 +39,7 @@ public class TileHandler :MonoBehaviour
     void SelectNearHex(Vector2 startPos)
     {
         Physics2D.OverlapCircleNonAlloc(startPos, 0.5f, nearestHexes);
+
         if (nearestHexes.Length > 1)
         {
             foreach (Collider2D collider in nearestHexes)
